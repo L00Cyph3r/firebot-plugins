@@ -103,7 +103,7 @@ interface CommunityPluginManifest {
         type: "font-awesome";
 
         /**
-         * A FontAwesome icon name shown in the UI (eg. "fa-cogs").
+         * A FontAwesome icon name shown in the UI (eg. `fa-cogs`).
          */
         name: `fa-${string}`;
 

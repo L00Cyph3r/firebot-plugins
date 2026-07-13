@@ -1,0 +1,204 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/crowbartools/firebot-plugins/plugin.schema.json",
+    "title": "Firebot Community Plugin Manifest",
+    "description": "A manifest file that describes a community plugin that will be listed in Firebot for end users to search for, install, and update.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Display name of your plugin (e.g. `My Cool Plugin`)"
+        },
+        "author": {
+            "type": "string",
+            "description": "Your name, as the author of this plugin (e.g. `Firebot`)"
+        },
+        "description": {
+            "type": "string",
+            "description": "A brief description of your plugin. Markdown is supported."
+        },
+        "version": {
+            "type": "string",
+            "description": "Version of your plugin this manifest represents. Must be a semver string with exactly 3 period-separated components: Major, minor, and patch. (e.g. `1.0.0`)",
+            "pattern": "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
+        },
+        "downloadUrl": {
+            "type": "string",
+            "description": "Direct download URL for the plugin file"
+        },
+        "sha256": {
+            "type": "string",
+            "description": "SHA256 hash of the plugin file specified in `downloadUrl`. Firebot will validate this hash after downloading your plugin.",
+            "pattern": "^([0-9]|[a-f]){64}$"
+        },
+        "releaseDate": {
+            "type": "string",
+            "description": "Release date of this version of your plugin. Must be an ISO-8601 formatted string.",
+            "pattern": "^(-?(?:[1-9][0-9]*)?[0-9]{4})-(1[0-2]|0[1-9])-(3[01]|0[1-9]|[12][0-9])T(2[0-3]|[01][0-9]):([0-5][0-9]):([0-5][0-9])(\\.[0-9]+)?(Z|[+-](?:2[0-3]|[01][0-9]):[0-5][0-9])?$"
+        },
+        "type": {
+            "type": "string",
+            "description": "Type of file your plugin is. Only `single-file` is supported at this time.",
+            "enum": [
+                "single-file"
+            ]
+        },
+        "icon": {
+            "type": "object",
+            "description": "Optional. An icon representing your plugin. This can either be a Font Awesome icon or a custom URL.",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Type of icon",
+                    "enum": [
+                        "font-awesome",
+                        "custom"
+                    ]
+                }
+            },
+            "required": [
+                "type"
+            ],
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "type": {
+                                "const": "font-awesome"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "A FontAwesome icon name shown in the UI (eg. `fa-cogs`).",
+                                "pattern": "^fa-.+$"
+                            },
+                            "color": {
+                                "type": "string",
+                                "description": "A CSS color value (e.g. `#FF0000`) used for the icon.",
+                                "pattern": "^#([0-9]|[a-f]|[A-F]){3,6}$"
+                            }
+                        },
+                        "required": [
+                            "name"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "type": {
+                                "const": "custom"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "url": {
+                                "type": "string",
+                                "description": "A URL for the icon image. This can be a data URL."
+                            },
+                            "backgroundColor": {
+                                "type": "string",
+                                "description": "A CSS color value (e.g. `#FF0000`) used for the background of the icon.",
+                                "pattern": "^#([0-9]|[a-f]|[A-F]){3,6}$"
+                            }
+                        },
+                        "required": [
+                            "url"
+                        ]
+                    }
+                }
+            ]
+        },
+        "category": {
+            "type": "string",
+            "description": "Optional. The category your plugin best fits under.",
+            "enum": [
+                "stream-services",
+                "social",
+                "music-media",
+                "games",
+                "overlays",
+                "tools-utilities"
+            ]
+        },
+        "features": {
+            "type": "array",
+            "description": "Optional. An array of Firebot features that your plugin implements. Each implemented feature only needs to be included in the array once.",
+            "contains": {
+                "type": "string"
+            },
+            "enum": [
+                "effects",
+                "events",
+                "variables",
+                "integrations",
+                "overlay-widgets",
+                "games",
+                "commands",
+                "ui-extensions"
+            ],
+            "uniqueItems": true
+        },
+        "tags": {
+            "type": "array",
+            "description": "Optional. An array of strings that describe or categorize your plugin.",
+            "contains": {
+                "type": "string"
+            },
+            "uniqueItems": true
+        },
+        "repo": {
+            "type": "string",
+            "description": "Optional. A link to the plugin's source code repository."
+        },
+        "website": {
+            "type": "string",
+            "description": "Optional. A link to the plugin's website. If the repo is on GitHub and the website is not specified, it will default to the GitHub repo URL."
+        },
+        "support": {
+            "type": "string",
+            "description": "Optional. A link to the plugin's issue tracker or support server (e.g. Discord). If the repo is on GitHub and support is not specified, it will default to the GitHub issues URL."
+        },
+        "minimumFirebotVersion": {
+            "$ref": "#/$defs/firebotVersion",
+            "description": "Optional. The lowest Firebot version this version of your plugin is compatible with."
+        },
+        "maximumFirebotVersion": {
+            "$ref": "#/$defs/firebotVersion",
+            "description": "Optional. The highest Firebot version this version of your plugin is compatible with."
+        }
+    },
+    "required": [
+        "name",
+        "author",
+        "description",
+        "version",
+        "downloadUrl",
+        "sha256",
+        "releaseDate",
+        "type"
+    ],
+    "$defs": {
+        "firebotVersion": {
+            "type": "object",
+            "properties": {
+                "major": {
+                    "type": "number"
+                },
+                "minor": {
+                    "type": "number"
+                },
+                "patch": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "major"
+            ]
+        }
+    }
+}

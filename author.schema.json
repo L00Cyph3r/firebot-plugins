@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/crowbartools/firebot-plugins/author.schema.json",
+    "title": "Firebot Community Plugin Author Manifest",
+    "description": "A manifest file that describes the author of one or more Firebot community plugins.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Your name. This will usually be the same as your Twitch username and author directory name. However, it may contain different capitalization (e.g. `DennisOnTheInternet`)."
+        },
+        "twitch": {
+            "type": "object",
+            "description": "Information about your Twitch account",
+            "properties": {
+                "username": {
+                    "type": "string",
+                    "description": "Your Twitch user login name (e.g. `zunderscore`)"
+                },
+                "userId": {
+                    "type": "string",
+                    "description": "Your Twitch account's internal user ID (e.g. `50989853`). You can find this in your Firebot `auth-twitch.json` file."
+                }
+            },
+            "required": [
+                "username",
+                "userId"
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "twitch"
+    ]
+}
