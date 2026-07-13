@@ -4,7 +4,7 @@ Welcome to the Firebot community plugin repository! This repo is designed to all
 
 # Code of Conduct
 
-This repository, along with all contributors and contributions to it, is governed by the [Firebot Community Code of Conduct](https://github.com/crowbartools/Firebot/blob/master/CODE_OF_CONDUCT.md). Any violations of the Code of Conduct are subject to the enforcement actions listed therein.
+This repository, along with all contributors and contributions to it, is governed by the [Firebot Community Code of Conduct](https://github.com/crowbartools/Firebot/blob/master/.github/CODE_OF_CONDUCT.md). Any violations of the Code of Conduct are subject to the enforcement actions listed therein.
 
 # Content Moderation Policy
 
