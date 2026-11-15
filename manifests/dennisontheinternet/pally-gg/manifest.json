@@ -1,0 +1,33 @@
+{
+    "name": "Pally.gg",
+    "author": "DennisOnTheInternet",
+    "description": "Pally.gg Donation events for Firebot",
+    "version": "1.1.0",
+    "downloadUrl": "https://github.com/dennisrijsdijk/firebot-plugin-pallygg/releases/download/v1.1.0/firebot-pally.js",
+    "sha256": "211bbb63cf6948c8f883cd072d44d676c07104456ac98ad6375263ea0f478435",
+    "releaseDate": "2026-11-15T12:44:49.713Z",
+    "type": "single-file",
+    "icon": {
+        "type": "custom",
+        "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgNjAwIiBjbGFzcz0iaC04IHctOCI+PGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzMxMl8zMjQ2KSI+PHBhdGggZD0iTTI2MyA1MEMxNTcuNjcyIDUwIDc0LjYxODggOTUuMTczMiAyOC4wODUxIDEzNC4zNzlDNy4wNjA2IDE1Mi4wOTMgLTIuMzczNzggMTc5LjM5NCAwLjUwNjM3OCAyMDYuNzM1QzE5LjE4MzMgMzg0LjAzNiAxNDcuNzUzIDYwMCAyNjMgNjAwQzM3OC4yNDcgNjAwIDUwNi44MTcgMzg0LjAzNiA1MjUuNDk0IDIwNi43MzVDNTI4LjM3NCAxNzkuMzk0IDUxOC45MzkgMTUyLjA5MyA0OTcuOTE1IDEzNC4zNzlDNDUxLjM4MSA5NS4xNzMyIDM2OC4zMjggNTAgMjYzIDUwWiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzMxMl8zMjQ2KSI+PC9wYXRoPjxwYXRoIGQ9Ik00MzkuODkgNy4wODEyOEMzODMuODY1IDExMC41NzcgMzA5LjY5MSAxNTUuMzY5IDIwOS44OTIgMTg0LjU1NUMyMDcuMTEzIDE4NS4zNTEgMjA0LjY1OSAxODcuMDA0IDIwMi44ODIgMTg5LjI3OUMyMDEuMTA2IDE5MS41NTMgMjAwLjA5OSAxOTQuMzMgMjAwLjAwNyAxOTcuMjExQzE5OS45MTUgMjAwLjA5MiAyMDAuNzQyIDIwMi45MjggMjAyLjM2OSAyMDUuMzFDMjAzLjk5NiAyMDcuNjkzIDIwNi4zMzkgMjA5LjUgMjA5LjA2MiAyMTAuNDdDMjg3LjIyMyAyMzkuMDc2IDMzNC4wMjggMjgyLjkxNyAzMzQuNTY4IDM3OS40OTlDMzM0LjU3NiAzODIuNTExIDMzNS41OTIgMzg1LjQzNCAzMzcuNDU0IDM4Ny44MDZDMzM5LjMxNiAzOTAuMTc4IDM0MS45MTkgMzkxLjg2MyAzNDQuODUgMzkyLjU5NUMzNDcuNzgxIDM5My4zMjYgMzUwLjg3MyAzOTMuMDYyIDM1My42MzcgMzkxLjg0NUMzNTYuNDAxIDM5MC42MjggMzU4LjY3OSAzODguNTI3IDM2MC4xMSAzODUuODc0QzQxNS45NjkgMjgyLjQyIDQ5MC4zNSAyMzcuNTg2IDU5MC4xMDggMjA4LjRDNTkyLjg4NyAyMDcuNjA1IDU5NS4zNDEgMjA1Ljk1MSA1OTcuMTE4IDIwMy42NzdDNTk4Ljg5NCAyMDEuNDAyIDU5OS45MDEgMTk4LjYyNSA1OTkuOTkzIDE5NS43NDRDNjAwLjA4NSAxOTIuODY0IDU5OS4yNTggMTkwLjAyOCA1OTcuNjMxIDE4Ny42NDVDNTk2LjAwNCAxODUuMjYzIDU5My42NjEgMTgzLjQ1NiA1OTAuOTM4IDE4Mi40ODVDNTEyLjY1MiAxNTMuODc5IDQ2Ni4wMTMgMTEwLjAzOCA0NjUuNDczIDEzLjQ1NjZDNDY1LjQ0NiAxMC40NDk0IDQ2NC40MTggNy41MzYyMiA0NjIuNTUxIDUuMTc0MTdDNDYwLjY4NCAyLjgxMjExIDQ1OC4wODMgMS4xMzQ4MiA0NTUuMTU2IDAuNDA1NDNDNDUyLjIyOSAtMC4zMjM5NTQgNDQ5LjE0MiAtMC4wNjQxNTQ0IDQ0Ni4zNzkgMS4xNDQwN0M0NDMuNjE2IDIuMzUyMjkgNDQxLjMzNCA0LjQ0MDU3IDQzOS44OSA3LjA4MTI4WiIgZmlsbD0iI0UzRkYxNyI+PC9wYXRoPjwvZz48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMzEyXzMyNDYiIHgxPSIyLjkzOTI1ZS0wNiIgeTE9IjMyNSIgeDI9IjUyNiIgeTI9IjMyNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiM2QjcwRkYiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjAuOTg0Mzc1IiBzdG9wLWNvbG9yPSIjODI1N0ZEIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9ImNsaXAwXzMxMl8zMjQ2Ij48cmVjdCB3aWR0aD0iNjAwIiBoZWlnaHQ9IjYwMCIgZmlsbD0id2hpdGUiPjwvcmVjdD48L2NsaXBQYXRoPjwvZGVmcz48L3N2Zz4="
+    },
+    "category": "stream-services",
+    "features": [
+        "events",
+        "variables"
+    ],
+    "tags": [
+        "donation",
+        "donations",
+        "tip",
+        "tips",
+        "alerts"
+    ],
+    "repo": "https://github.com/dennisrijsdijk/firebot-plugin-pallygg",
+    "support": "https://github.com/dennisrijsdijk/firebot-plugin-pallygg/issues",
+    "minimumFirebotVersion": {
+        "major": 5,
+        "minor": 67,
+        "patch": 0
+    }
+}
