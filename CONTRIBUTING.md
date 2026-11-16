@@ -250,7 +250,15 @@ Example:
 
 `add: zunderscore/fourthwall/2.0.0`
 
-The only files that may be included are **new** plugin manifests or **new** author manifests. Plugin manifests are **immutable**, so please ensure that any plugin manifest you submit via PR is complete and correct **BEFORE** opening your pull request. You **will not** be able to change a plugin manifest once it has been merged.
+Or in the case of an author manifest:
+
+`add: {author-name}/author.json`
+
+Example:
+
+`add: zunderscore/author.json`
+
+Each PR may only contain a single manifest file. The only file that may be included in a PR is a **new** plugin manifest OR a **new** author manifest. Plugin manifests are **immutable**, so please ensure that any plugin manifest you submit via PR is complete and correct **BEFORE** opening your pull request. You **will not** be able to change a plugin manifest once it has been merged.
 
 > [!NOTE]
 > Author manifests _may_ be updated in the highly rare instance that your name or Twitch username changes, but your Twitch user ID may **not** be modified and any new Twitch username submitted must still correlate to the existing user ID both at the time of submission and review. Your author directory name inside  `manifests` may also **not** be changed as plugin manifests are immutable. This would also break plugin updates for end users who have already installed any of your plugins.
