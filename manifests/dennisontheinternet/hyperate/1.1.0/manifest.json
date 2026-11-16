@@ -1,0 +1,31 @@
+{
+    "name": "Hyperate",
+    "author": "DennisOnTheInternet",
+    "description": "Hyperate heartrate events for Firebot",
+    "version": "1.1.0",
+    "downloadUrl": "https://github.com/dennisrijsdijk/firebot-plugin-hyperate/releases/download/v1.1.0/firebot-hyperate.js",
+    "sha256": "7d2f2317ad20730a5d4162ce717a5316431fffc300dbeb3b56e1d1ae0f61680b",
+    "releaseDate": "2026-11-15T11:35:30.508Z",
+    "type": "single-file",
+    "icon": {
+        "type": "custom",
+        "url": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIg0KICAgICB2aWV3Qm94PSIwIDAgMTMyLjM0IDEzMi4zNCI+DQogICAgPGRlZnM+DQogICAgICAgIDxzdHlsZT4NCiAgICAgICAgICAgIC5jbHMtMXtmaWxsOiMxZDFkMWI7fQ0KICAgICAgICAgICAgLmNscy0ye2ZpbGw6I2RmMTM0MDt9DQogICAgICAgICAgICAuY2xzLTN7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1taXRlcmxpbWl0OjEwO3N0cm9rZS13aWR0aDo0LjY4cHg7fQ0KICAgICAgICA8L3N0eWxlPg0KICAgIDwvZGVmcz4NCg0KICAgIDwhLS0gQmFja2dyb3VuZCAtLT4NCiAgICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIxMzIuMzQiIGhlaWdodD0iMTMyLjM0Ii8+DQogICAgPGNpcmNsZSBjbGFzcz0iY2xzLTEiIGN4PSI2Ni4xNyIgY3k9IjY2LjE3IiByPSI2Ni4xNyIvPg0KDQogICAgPCEtLSBFbmxhcmdlZCBsb2dvIC0tPg0KICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDY2LjE3IDY2LjE3KSBzY2FsZSgxLjUpIHRyYW5zbGF0ZSgtNjYuMTcgLTY2LjE3KSI+DQogICAgICAgIDxwYXRoIGNsYXNzPSJjbHMtMiINCiAgICAgICAgICAgICAgZD0iTTk4Ljc0LDQyLjQzYTIzLDIzLDAsMCwwLTMyLjU3LDBBMjMsMjMsMCwwLDAsMzMuNjEsNzVsMzIuNTYsMzIuNTZMOTguNzQsNzVBMjMsMjMsMCwwLDAsOTguNzQsNDIuNDNaIi8+DQoNCiAgICAgICAgPHBhdGggY2xhc3M9ImNscy0zIg0KICAgICAgICAgICAgICBkPSJNMjMuNjcsNjUuMzRIMzcuODRMNTcuNTEsNDguNFY4NS4zMkw2OSw3MS4yMkE0LjM0LDQuMzQsMCwwLDEsNzYuNjksNzR2Ny40NmwxOS0xNi4xMSwxNC4xOCwwIi8+DQogICAgPC9nPg0KPC9zdmc+"
+    },
+    "category": "stream-services",
+    "features": [
+        "events",
+        "variables",
+        "integrations"
+    ],
+    "tags": [
+        "hyperate",
+        "heartrate"
+    ],
+    "repo": "https://github.com/dennisrijsdijk/firebot-plugin-hyperate",
+    "support": "https://github.com/dennisrijsdijk/firebot-plugin-hyperate/issues",
+    "minimumFirebotVersion": {
+        "major": 5,
+        "minor": 67,
+        "patch": 0
+    }
+}
