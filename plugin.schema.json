@@ -116,37 +116,40 @@
         "category": {
             "type": "string",
             "description": "Optional. The category your plugin best fits under.",
-            "enum": [
-                "stream-services",
-                "social",
-                "music-media",
-                "games",
-                "overlays",
-                "tools-utilities"
-            ]
+            "items": {
+                "type": "string",
+                "enum": [
+                    "stream-services",
+                    "social",
+                    "music-media",
+                    "games",
+                    "overlays",
+                    "tools-utilities"
+                ]
+            }
         },
         "features": {
             "type": "array",
             "description": "Optional. An array of Firebot features that your plugin implements. Each implemented feature only needs to be included in the array once.",
-            "contains": {
-                "type": "string"
+            "items": {
+                "type": "string",
+                "enum": [
+                    "effects",
+                    "events",
+                    "variables",
+                    "integrations",
+                    "overlay-widgets",
+                    "games",
+                    "commands",
+                    "ui-extensions"
+                ]
             },
-            "enum": [
-                "effects",
-                "events",
-                "variables",
-                "integrations",
-                "overlay-widgets",
-                "games",
-                "commands",
-                "ui-extensions"
-            ],
             "uniqueItems": true
         },
         "tags": {
             "type": "array",
             "description": "Optional. An array of strings that describe or categorize your plugin.",
-            "contains": {
+            "items": {
                 "type": "string"
             },
             "uniqueItems": true
